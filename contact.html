@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Applight</title>
+    <link rel="icon" type="image/x-icon" href="images/download.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lobster&display=swap" rel="stylesheet">
+    <script src="fontawesome/fontawesome-free-6.6.0-web/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+        background-color: #f4f4f4; /* Light gray background */
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    h1 {
+      font-family: 'Poppins', sans-serif; 
+        color: darkorchid; /* Updated heading color */
+    }
+    
+    .btn-custom {
+        background-color: darkorchid; /* Updated button color */
+        color: white; 
+    }
+    
+    .btn-custom:hover {
+        background-color: darkorchid; /* Darker shade for hover */
+    }
+    
+    .text-justify {
+        text-align: justify;  
+    }
+
+    .card {
+        border: 1px solid blanchedalmond; /* Updated border color */
+    }
+    
+    .card-body {
+        color: darkorchid; /* Updated text color */
+    }
+
+    .footer1 {
+        background-color: darkorchid; /* Updated footer background color */
+        color: white;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: #FFD700; /* Gold color */
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .highlight {
+        border: 2px solid darkorchid; /* Updated highlight border color */
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 30px;
+        background-color: #ffffff; /* Background color for highlight */
+    }
+
+    .social-media {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .logo-circle {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes it circular */
+    background-color: darkorchid; /* White background for visibility */
+    border: 2px solid #010810; /* Blue border */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    overflow: hidden; /* Ensures the image fits within the circle */
+}
+
+.logo-circle img {
+    width: 100%; /* Makes sure the image covers the circle */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+    .welcome-image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%; /* Set to 100% height */
+        object-fit: cover; /* Cover the entire area */
+        opacity: 0.5; /* Increased opacity for better visibility */
+        z-index: -1; /* Place behind other content */
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkorchid;">
+        <div class="container-fluid">
+            <div class="logo-circle">
+                <img src="images/logo.png" alt="KShoes Logo">
+            </div>
+            <a href="Profile.html" class="navbar-brand" style="margin-left: 10px; color: white; font-weight: 600;">Applight</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-images"></i> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                    </li>                                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html"><i class="fa-solid fa-concierge-bell"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonals.html"><i class="fa-solid fa-people-line"></i></i>Testimonals</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="login.html" class="text-decoration-none text-white"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+ 
+
+    <div class="hero-section text-center"><br>
+        <h2>Contact Us</h2>
+        <div class="bg-primary mt-2 m-auto" style="width: 200px; height: 4px;"></div>
+        <p class="mt-3">We're here to help! Reach out to us via any of the methods below:</p>
+    </div>
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="text-black text-center">Contact Information</h5>
+                        <div class="my-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-phone iconX"></i>
+                                <div class="ms-3"><strong>Phone Number:</strong><p>09874512451</p></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-brands fa-facebook iconX"></i>
+                                <div class="ms-3"><strong>Facebook:</strong><p>Applight Page</p></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-brands fa-instagram iconX"></i>
+                                <div class="ms-3"><strong>Instagram:</strong><p>@Applight</p></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-envelope iconX"></i>
+                                <div class="ms-3"><strong>Email:</strong><p>cryptoapplight@gmail.com</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-7">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="text-center">Send Us a Message</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label>First Name:</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label>Last Name:</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label>Email Address:</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label>Subject:</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label>Message:</label>
+                                <textarea class="form-control" rows="4" required placeholder="Enter your message here."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-custom">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="social-media">
+        <h2>For More Information</h2>
+        <p style="color: #4a4a4a;">Connect with us on social media or reach out via email:</p>
+        <div>
+            <a href="https://www.tiktok.com/@applight" target="_blank" class="btn btn-custom me-2"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+            <a href="https://www.facebook.com/applight" target="_blank" class="btn btn-custom me-2"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="mailto:applight@gmail.com" class="btn btn-custom"><i class="fa-regular fa-envelope"></i> Email Us</a>
+        </div>
+    </div>
+
+    <footer class="footer1 text-center">
+        <div class="container">
+            <p>&copy; 2024 Applight. All Rights Reserved.</p>
+            <h6>Copyright <b>IT2F Property</b> ALL Rights Reserved</h6>
+            <p>Designed by <a href="https://www.facebook.com/" class="text-decoration-none">Jade Banagan</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-5L6eY8DLT/sVDQmTQ6WwZfV+aGLqe15zQARzgxWjYLRJlEvl2fZMx1qln/mPpmhC" crossorigin="anonymous"></script>
+</body>
+</html>

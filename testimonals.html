@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Applight</title>
+    <link rel="icon" type="image/x-icon" href="images/download.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lobster&display=swap" rel="stylesheet">
+    <script src="fontawesome/fontawesome-free-6.6.0-web/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif; 
+            color: darkorchid; /* Updated heading color */
+        }
+        
+        .btn-custom {
+            background-color: darkorchid; /* Updated button color */
+            color: white; 
+        }
+        
+        .btn-custom:hover {
+            background-color: darkorchid; /* Darker shade for hover */
+        }
+        
+        .text-justify {
+            text-align: justify;  
+        }
+
+        .card {
+            border: 1px solid blanchedalmond; /* Updated border color */
+        }
+        
+        .card-body {
+            color: darkorchid; /* Updated text color */
+        }
+
+        .footer1 {
+            background-color: darkorchid; /* Updated footer background color */
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #FFD700; /* Gold color */
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            border: 2px solid darkorchid; /* Updated highlight border color */
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: #ffffff; /* Background color for highlight */
+        }
+
+        .social-media {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .logo-circle {
+            width: 50px; /* Adjust the size as needed */
+            height: 50px; /* Adjust the size as needed */
+            border-radius: 50%; /* Makes it circular */
+            background-color: darkorchid; /* White background for visibility */
+            border: 2px solid #010810; /* Blue border */
+            display: flex;
+            align-items: center; /* Center the image vertically */
+            justify-content: center; /* Center the image horizontally */
+            overflow: hidden; /* Ensures the image fits within the circle */
+        }
+
+        .logo-circle img {
+            width: 100%; /* Makes sure the image covers the circle */
+            height: auto; /* Keeps the aspect ratio */
+        }
+
+        .welcome-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%; /* Set to 100% height */
+            object-fit: cover; /* Cover the entire area */
+            opacity: 0.5; /* Increased opacity for better visibility */
+            z-index: -1; /* Place behind other content */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkorchid;">
+        <div class="container-fluid">
+            <div class="logo-circle">
+                <img src="images/logo.png" alt="KShoes Logo">
+            </div>
+            <a href="Profile.html" class="navbar-brand" style="margin-left: 10px; color: white; font-weight: 600;">Applight</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-images"></i> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                    </li>                                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html"><i class="fa-solid fa-concierge-bell"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="testimonals.html"><i class="fa-solid fa-people-line"></i>Testimonals</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="login.html" class="text-decoration-none text-white"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+ 
+<!-------Testimonial Start-------> 
+<section class="testimonial section-padding" data-scroll-index='4'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sectioner-header text-center white"><br>
+                    <h3>What Our Users Say</h3>
+                    <div class="bg-primary mt-2 m-auto" style="width: 200px; height: 4px;"></div><br>
+                    <span class="line"></span>
+                    <p class="white">
+                        We invite you to explore the testimonials that reflect the resonance of our users’ experiences. Their insights may inspire you to embark on your own journey with Applight. If you have a story to share, we’d love to hear from you! Your feedback helps us grow and improve, ensuring that we continue to meet your needs.
+                        <br><br>
+                        Thank you for being a part of the Applight community—where your voice truly matters!
+                    </p>
+                </div>
+
+                <!-- Bootstrap Carousel for Testimonials -->
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <div class="bg-light mt-2 m-auto" style="width: 200px; height: 4px;"></div><br>
+                        <h1><li data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></li></h1>
+                        <h1><li data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></li></h1>
+                        <h1><li data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></li></h1>
+                    </ol>
+
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="test-img">
+                                        <img src="images/user1.jpg" alt="Anna Sage" width="157" height="157" class="rounded-circle">
+                                    </div>
+                                    <div class="test-text">
+                                        <span class="title"><span>Anna Sage</span>, Digital Designer</span>
+                                        <p>Applight has completely transformed the way I manage my projects. The intuitive interface and seamless cross-platform functionality mean I can access my work from anywhere. I've seen a significant boost in my productivity since I started using it!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="test-img">
+                                        <img src="images/user3.jpg" alt="Steve Smith" width="157" height="157" class="rounded-circle">
+                                    </div>
+                                    <div class="test-text">
+                                        <span class="title"><span>Steve Smith</span>, App User</span>
+                                        <p>As someone who isn’t very tech-savvy, I was pleasantly surprised by how easy Applight is to use. The application is user-friendly and responsive, making it simple to navigate and complete tasks quickly. It’s become an essential tool in my daily routine!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="test-img">
+                                        <img src="images/user2.jpg" alt="Gordon Shaw" width="157" height="157" class="rounded-circle">
+                                    </div>
+                                    <div class="test-text">
+                                        <span class="title"><span>Gordon Shaw</span>, Blogger</span>
+                                        <p>Applight has been a game-changer for my productivity. Whether I’m creating content or managing deadlines, everything is streamlined in one platform. The ease of use and integration with my other tools has allowed me to focus more on what matters.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------Testimonial End------->
+
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="social-media">
+        <h2>For More Information</h2>
+        <p style="color: #4a4a4a;">Connect with us on social media or reach out via email:</p>
+        <div>
+            <a href="https://www.tiktok.com/@applight" target="_blank" class="btn btn-custom me-2"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+            <a href="https://www.facebook.com/applight" target="_blank" class="btn btn-custom me-2"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="mailto:applight@gmail.com" class="btn btn-custom"><i class="fa-regular fa-envelope"></i> Email Us</a>
+        </div>
+    </div>
+
+    <footer class="footer1 text-center">
+        <div class="container">
+            <p>&copy; 2024 Applight. All Rights Reserved.</p>
+            <h6>Copyright <b>IT2F Property</b> ALL Rights Reserved</h6>
+            <p>Designed by <a href="https://www.facebook.com/" class="text-decoration-none">Jade Banagan</a></p>
+        </div>
+    </footer>
+</body>
+</html>

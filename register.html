@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Page</title>
+    <link rel="icon" type="image/x-icon" href="logo2.jpg">
+    <style>
+body {
+    font: sans-serif;
+    background-color: darkorchid; /*  background color */
+	margin: 0;
+    padding: 20px;
+    
+}
+
+.nn{
+    font-size: 25px;
+}
+
+#container {
+    max-width: 450px;
+    margin: 50px auto; /* Center the container with top/bottom margin */
+    padding: 20px;
+    border: 2px solid black; /* Thicker border for better visibility */
+    border-radius: 10px;
+    background: palevioletred; /* background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+#logoArea {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#logoArea img {
+    width: 140px; /* Logo size */
+    height: auto;
+    border: none;
+    border-radius: 100%;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.groupField {
+    margin-bottom: 15px;
+}
+
+.groupField label {
+    display: block;
+    margin-bottom: 6px;
+    color: white; /* labels */
+    font-weight: bold;
+}
+
+.groupField input,
+.groupField select {
+    width: 100%;
+    padding: 10px; /* Increased padding for better spacing */
+    border: 1px solid #00796b; /* border for inputs */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+#buttonArea {
+    text-align: center;
+}
+
+#buttonArea button {
+    background-color: lightgoldenrodyellow;
+    color: black; /* black text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#buttonArea button:hover {
+    background-color: green; /* Darker  on hover */
+}
+
+    
+	</style>
+    
+
+</head>
+<body>
+    <form action="login.html">
+        <div id="container">
+            <div id="logoArea">
+                <img src="images/download.png" alt="Logo">
+                <div class="nn">
+                <h3 >Applight Registration</h3>
+                </div>
+            </div>
+            <section class="input-section">
+                <h1><b>Personal Information</b></h1>
+                <div class="groupField">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="mname">Middle Name</label>
+                    <input type="text" id="mname" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="Suffix">Select Suffix:</label>
+                    <select id="Suffix" autocomplete="off" required>
+                        <option>None</option>
+                        <option>Jr</option>
+                        <option>Sr</option>
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                        <option>IV</option>
+                        <option>V</option>
+                    </select>
+                </div>
+                <div class="groupField">
+                    <label for="bdate">Birthdate:</label>
+                    <input type="date" id="bdate" autocomplete="off" required>
+                </div>
+            </section>
+            <section class="input-section">
+                <h1><b> Account Information</b></h1>
+                <div class="groupField">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" autocomplete="off" required>
+                </div>
+            </section>
+            <div id="buttonArea">
+                <button type="reset">Cancel</button>
+                <button type="submit" >Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+	<footer class="footer-copy">
+    	 <p>2024 &copy; Applight. Website Designed by <a href="https://www.facebook.com/banagan.jade" target="_blank" rel="dofollow">Jade Banagan</a></p>
+
+	  </footer>
+	  
+
+</body>
+</html>  
